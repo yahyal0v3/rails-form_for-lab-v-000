@@ -3,9 +3,9 @@ class SchoolClassesController < ApplicationController
   end
 
   def new
-  end 
+  end
 
   def create
-  end 
-  
+  end
+
 end
