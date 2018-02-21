@@ -7,6 +7,7 @@ class SchoolClassesController < ApplicationController
   end
 
   def create
+    @school_class = SchoolClass.create(class_params)
   end
 
   def edit
