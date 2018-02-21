@@ -1,5 +1,6 @@
 class StudentsController < ApplicationController
   def show
+    
   end
 
   def new
@@ -7,8 +8,8 @@ class StudentsController < ApplicationController
   end
 
   def create
-    @student = Student.create(student_params(:first_name, :last_name))
-    redirect_to student_path
+    student = Student.create(student_params(:first_name, :last_name))
+    redirect_to student_path(student)
   end
 
   def edit
