@@ -17,6 +17,9 @@ class StudentsController < ApplicationController
   end
 
   def update
+    student = SchoolClass.find(params[:id])
+    student.update(class_params(:title, :room_number))
+    redirect_to student_path(school_class)
   end
 
   private
