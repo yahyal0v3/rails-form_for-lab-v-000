@@ -3,9 +3,12 @@ class StudentsController < ApplicationController
   end
 
   def new
+    @student = Student.new
   end
 
   def create
+    @student = SchoolClass.create(class_params(:title, :room_number))
+    redirect_to student_path
   end
 
   def edit
@@ -13,4 +16,10 @@ class StudentsController < ApplicationController
 
   def update
   end
+
+  private
+
+	def class_params(*args)
+	  params.require(:student).permit(*args)
+	end
 end
