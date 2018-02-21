@@ -15,7 +15,7 @@ class SchoolClassesController < ApplicationController
 
   def update
   end
-  
+
   private
 
 	def class_params(*args)
