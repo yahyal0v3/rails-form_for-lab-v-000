@@ -255,3 +255,27 @@ Processing by SchoolClassesController#create as HTML
   [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
 Redirected to http://67.205.152.27:35387/school_classes/1
 Completed 302 Found in 53ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/school_classes/1" for 68.195.7.92 at 2018-02-21 03:48:29 +0000
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSchoolClass Load (0.2ms)[0m  SELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered school_classes/show.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 19.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/school_classes/1edit" for 68.195.7.92 at 2018-02-21 03:48:35 +0000
+Processing by SchoolClassesController#show as HTML
+  Parameters: {"id"=>"1edit"}
+  [1m[36mSchoolClass Load (0.1ms)[0m  [1mSELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered school_classes/show.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/school_classes/1/edit" for 68.195.7.92 at 2018-02-21 03:48:45 +0000
+Processing by SchoolClassesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mSchoolClass Load (0.2ms)[0m  SELECT  "school_classes".* FROM "school_classes" WHERE "school_classes"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered school_classes/edit.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 23.4ms | ActiveRecord: 0.2ms)
