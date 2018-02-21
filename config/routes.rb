@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  resource :students, only: [:index, :show]
+  resource :students, only: [:index]
   get 'students' => 'students#show'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
