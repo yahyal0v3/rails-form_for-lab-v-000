@@ -138,3 +138,56 @@ Started GET "/students/new" for 68.195.7.92 at 2018-02-21 03:47:10 +0000
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by StudentsController#new as HTML
   Rendered students/new.erb within layouts/application (13.7ms)
+Completed 200 OK in 519ms (Views: 500.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/school_classes.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 68.195.7.92 at 2018-02-21 03:47:11 +0000
+
+
+Started GET "/assets/student_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 68.195.7.92 at 2018-02-21 03:47:11 +0000
+
+
+Started GET "/assets/students.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 68.195.7.92 at 2018-02-21 03:47:11 +0000
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 68.195.7.92 at 2018-02-21 03:47:11 +0000
+
+
+Started GET "/assets/students_controller.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 68.195.7.92 at 2018-02-21 03:47:11 +0000
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 68.195.7.92 at 2018-02-21 03:47:11 +0000
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 68.195.7.92 at 2018-02-21 03:47:11 +0000
+
+
+Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for 68.195.7.92 at 2018-02-21 03:47:11 +0000
+
+
+Started GET "/assets/school_classes.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 68.195.7.92 at 2018-02-21 03:47:11 +0000
+
+
+Started GET "/assets/student_controller.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 68.195.7.92 at 2018-02-21 03:47:11 +0000
+
+
+Started GET "/assets/students.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 68.195.7.92 at 2018-02-21 03:47:11 +0000
+
+
+Started GET "/assets/students_controller.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 68.195.7.92 at 2018-02-21 03:47:11 +0000
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 68.195.7.92 at 2018-02-21 03:47:11 +0000
+
+
+Started POST "/students" for 68.195.7.92 at 2018-02-21 03:47:27 +0000
+Processing by StudentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h4IFsQwMrkiU9woGNNYUusBarM52NlWjqrHBz/RRR95ByXBsrV/Bu/qlc/IuFbLS/S7TCYmrgCu0Gad+TTrwSQ==", "student"=>{"first_name"=>"Khaya", "last_name"=>"Dillon"}, "commit"=>"Create Student"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "students" ("first_name", "last_name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["first_name", "Khaya"], ["last_name", "Dillon"], ["created_at", "2018-02-21 03:47:27.181537"], ["updated_at", "2018-02-21 03:47:27.181537"]]
+  [1m[35m (85.7ms)[0m  commit transaction
+Redirected to http://67.205.152.27:35387/students/3
+Completed 302 Found in 92ms (ActiveRecord: 86.2ms)
+
+
+Started GET "/students/3" for 68.195.7.92 at 2018-02-21 03:47:27 +0000
